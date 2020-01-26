@@ -3,17 +3,40 @@
 <form action="/pirates" method="post">
   <label for="pirate_name">Pirate Name:</label>
   <input type="text" name="pirate[name]"></input>
+ 
   <label for="pirate_weight" name="pirate_weight">Pirate Weight:</label>
   <input type="text" name="pirate[weight]"></input>
+ 
   <label for="pirate_height">Pirate Height:</label> 
   <input type="text" name="pirate[height]"></input>
+ 
   <label for="ship_name_1">Ship Name 1: </label>
   <input type="text" name="pirate[ships][][name]">
-  Ship Type: <input type="text" name="pirate[ships][][type]">
-  Ship Attributes <input type="text" name="pirate[ships][][attributes]">
-  Ship Name 2: <input type="text" name="pirate[ships][][name]">
-  Ship Type: <input type="text" name="pirate[ships][][type]">
-  Ship Attributes <input type="text" name="pirate[ships][][attributes]">
+ 
+  <label type="text" name="ship_type_1">Ship Type:</label>
+  <input type="text" name="pirate[ships][][type]">
+ 
+  <label type="text" name="ship_booty_1">Ship Attributes</label>
+  <input type="text" name="pirate[ships][][attributes]">
+  
+  <label type="text" name="ship_name_2">Ship Name 2:</label>
+  <input type="text" name="pirate[ships][][name]">
+  
+  <label type="text" name="ship_type_2">Ship Type:</label>
+  <input type="text" name="pirate[ships][][type]">
+  
+  <label type="text" name="ship_booty_2">Ship Attributes</label>
+  <input type="text" name="pirate[ships][][attributes]">
   <input type="submit">
 </form>
 
+  <!--fill_in("pirate[name]", :with => "Captain Jack Sparrow")-->
+  <!--  fill_in("pirate[weight]", :with => "190 lbs")-->
+  <!--  fill_in("pirate[height]", :with => "5 feet 11 inches")-->
+  <!--  fill_in("ship_name_1", :with => "Flying Dutchman")-->
+  <!--  fill_in("ship_type_1", :with => "ghost ship")-->
+  <!--  fill_in("ship_booty_1", :with => "gold coins")-->
+  <!--  fill_in("ship_name_2", :with => "Black Pearl")-->
+  <!--  fill_in("ship_type_2", :with => "merchant vessel")-->
+  <!--  fill_in("ship_booty_2", :with => "treasure map")-->
+  <!--  click_button('Submit')-->
