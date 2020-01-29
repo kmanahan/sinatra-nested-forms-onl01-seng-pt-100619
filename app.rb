@@ -10,6 +10,7 @@ module FormsLab
   end
   
   post '/pirates' do
+<<<<<<< HEAD
     @pirate = Pirate.new(name: params[:pirate][:name], height: params[:pirate][:height], weight: params[:pirate][:weight] )
  
     params[:pirate][:ships].each do |details|
@@ -18,6 +19,15 @@ module FormsLab
       ship.save
     end
  
+=======
+    @pirate = Student.new(params[:pirate])
+ 
+    params[:pirate][:ships].each do |details|
+      Ship.new(details)
+    end
+ 
+    @ships = Ship.all
+>>>>>>> 2dbeea44ae33c90cc93a3bc83b88a0a66aae6ff2
  
     erb :show
   end 
