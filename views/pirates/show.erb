@@ -6,7 +6,7 @@
 </div><br>
 
 <h2>Display your first ship here</h2>
-<% @ships.each do |ship| %>
+<% @ships.each_with_index do |ship, index| %>
   <div class="ship">
     <p>Ship Name: <%= ship.name %></p><br>
     <p>Ship Type: <%= ship.type %></p><br>
